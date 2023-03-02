@@ -1,0 +1,145 @@
+/* FONTFAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+/* FONTFAMILY */
+
+/* PADRÕES */
+:root {
+  --fonte_principal: "Montserrat", sans-serif;
+  --verde_escuro: #1f4e3d;
+  --verde_claro: #82ac3b;
+  --azul_footer: #144875;
+  --branco_padrao: #ffffff;
+  --verde_secundario: #49a760;
+  --cor_fonte: #6e7673;
+}
+/* PADRÕES */
+
+.wrapper.style3 {
+  background-color: #003700;
+  color: #d3d4e4;
+}
+
+section.special,
+article.special {
+  text-align: center;
+}
+
+.wrapper {
+  padding: 4em 0 4em 0;
+}
+
+.wrapper > .inner {
+  width: 60em;
+  margin: 0 auto;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0px;
+  width: 100%;
+}
+
+.features li {
+  padding: 4em 4em 2em 6em;
+  display: block;
+  position: relative;
+  text-align: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 980px) {
+  .features li {
+    padding: 3em 2em 1em 2em;
+    text-align: center;
+  }
+
+  .features li:before {
+    left: 0;
+    margin: 0 0 1em 0;
+    position: relative;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .features li {
+    padding: 3em 0 1em 0;
+    background-color: transparent !important;
+    width: 100%;
+  }
+
+  .features li:first-child {
+    border-top: 0;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper > .inner {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .wrapper > .inner {
+    width: 100%;
+  }
+}
+
+.headline {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+/*testimonials*/
+.testimonial {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  background: #333;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+#testimonials {
+  width: 100%;
+  background: #222;
+  color: #eee;
+  padding: 50px;
+}
+
+#testimonials-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial .testimonial-image {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+@media (max-width: 768px) {
+  /*testimonials*/
+  .testimonial {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 70vh;
+  }
+}

@@ -1,0 +1,419 @@
+/* FONTFAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+/* FONTFAMILY */
+
+/* PADRÕES */
+:root {
+  --fonte_principal: "Montserrat", sans-serif;
+  --verde_escuro: #1f4e3d;
+  --verde_claro: #82ac3b;
+  --azul_footer: #144875;
+  --branco_padrao: #ffffff;
+  --verde_secundario: #49a760;
+  --cor_fonte: #6e7673;
+}
+/* PADRÕES */
+
+/* BANNER */
+#banner {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  cursor: default;
+  height: 95vh;
+  min-height: 35em;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+#banner h2 {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+  -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  display: inline-block;
+  font-size: 1.75em;
+  opacity: 1;
+  padding: 0.35em 1em;
+  position: relative;
+  z-index: 1;
+  font-family: var(--fonte_principal);
+}
+
+#banner h2 .titulo_manual {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+  -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  display: inline-block;
+  font-size: 1.75em;
+  opacity: 1;
+  padding: 0.35em 1em;
+  position: relative;
+  z-index: 1;
+  font-family: var(--fonte_principal);
+}
+
+#banner h2 .titulo_manual_secundario {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+  -ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  display: inline-block;
+  font-size: 1.75em;
+  opacity: 1;
+  padding: 0.35em 1em;
+  position: relative;
+  z-index: 1;
+  font-family: var(--fonte_principal);
+}
+
+#banner h2:after {
+  -moz-transition: width 0.85s ease;
+  -webkit-transition: width 0.85s ease;
+  -ms-transition: width 0.85s ease;
+  transition: width 0.85s ease;
+  -moz-transition-delay: 0.25s;
+  -webkit-transition-delay: 0.25s;
+  -ms-transition-delay: 0.25s;
+  transition-delay: 0.25s;
+  background: #fff;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+}
+
+#banner h2:before {
+  top: 0;
+  left: 0;
+}
+
+#banner h2:after {
+  bottom: 0;
+  right: 0;
+}
+
+#banner p {
+  letter-spacing: 0.225em;
+  text-transform: uppercase;
+  position: relative;
+}
+
+#banner p a {
+  color: inherit;
+}
+
+#banner .more {
+  -moz-transition: -moz-transform 0.75s ease, opacity 0.75s ease;
+  -webkit-transition: -webkit-transform 0.75s ease, opacity 0.75s ease;
+  -ms-transition: -ms-transform 0.75s ease, opacity 0.75s ease;
+  transition: transform 0.75s ease, opacity 0.75s ease;
+  -moz-transition-delay: 3.5s;
+  -webkit-transition-delay: 3.5s;
+  -ms-transition-delay: 3.5s;
+  transition-delay: 3.5s;
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  border: none;
+  bottom: 0;
+  color: inherit;
+  font-size: 0.8em;
+  height: 8.5em;
+  left: 50%;
+  letter-spacing: 0.225em;
+  margin-left: -8.5em;
+  opacity: 1;
+  outline: 0;
+  padding-left: 0.225em;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  width: 16em;
+  z-index: 1;
+}
+
+#banner .more:after {
+  background-image: url("../img/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 4em;
+  content: "";
+  display: block;
+  height: 1.5em;
+  left: 50%;
+  margin: 0 0 0 -0.75em;
+  position: absolute;
+  width: 1.5em;
+}
+
+#banner:after {
+  pointer-events: none;
+  -moz-transition: opacity 3s ease-in-out;
+  -webkit-transition: opacity 3s ease-in-out;
+  -ms-transition: opacity 3s ease-in-out;
+  transition: opacity 3s ease-in-out;
+  -moz-transition-delay: 1.25s;
+  -webkit-transition-delay: 1.25s;
+  -ms-transition-delay: 1.25s;
+  transition-delay: 1.25s;
+  content: "";
+  background: #2e3842;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+body.is-preload #banner h2 {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+  opacity: 0;
+}
+
+body.is-preload #banner h2:before,
+body.is-preload #banner h2:after {
+  width: 0;
+}
+
+body.is-preload #banner .more {
+  -moz-transform: translateY(8.5em);
+  -webkit-transform: translateY(8.5em);
+  -ms-transform: translateY(8.5em);
+  transform: translateY(8.5em);
+  opacity: 0;
+}
+
+body.is-preload #banner:after {
+  opacity: 1;
+}
+/* BANNER */
+
+/*TITLE*/
+.title {
+  position: relative;
+  text-align: center;
+  margin: 12rem 0 2rem 0;
+}
+
+.title img {
+  width: 2%;
+}
+
+.title p {
+  margin-top: 5px;
+  font-family: var(--fonte_principal);
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: rgb(158, 165, 162);
+}
+
+.title h3 {
+  font-family: var(--fonte_principal);
+  font-size: 30px;
+  font-weight: 700;
+  color: #255946;
+}
+/*TITLE*/
+
+/*FORM E INFORMAÇÕES DE CONTATO*/
+.container_form {
+  width: 100%;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+}
+
+.container_form .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container_form .content .left-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+
+.content .left-side::before {
+  content: "";
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #255946;
+}
+
+.content .left-side .details {
+  margin: 14px;
+  text-align: center;
+}
+
+.content .left-side .details i {
+  font-size: 30px;
+  color: #83ac3c;
+  margin-bottom: 10px;
+}
+
+.content .left-side .details .topic {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+  font-size: 14px;
+  color: #afafb6;
+}
+
+.container_form .content .right-side {
+  width: 35%;
+  margin-left: 75px;
+}
+
+.content .right-side .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #83ac3c;
+}
+
+.right-side .input-box {
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+  color: #000000;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+.right-side .message-box {
+  min-height: 110px;
+}
+
+.right-side .input-box textarea {
+  padding-top: 6px;
+}
+
+.right-side .button {
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.right-side .button button[type="submit"] {
+  color: #fff;
+  font-size: 20px;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 6px;
+  background: #49a760;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button button[type="submit"]:hover {
+  background: #83ac3c;
+}
+/*FORM E INFORMAÇÕES DE CONTATO*/
+
+/*ÍCONES DE REDES SOCIAIS*/
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons li a {
+  font-size: 30px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+.social-icons li a:hover {
+  background-image: linear-gradient(45deg, #144875, #144875, #144875);
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 40px;
+}
+
+.social-icons li a::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #49a760, #83ac3c, #1f4e3d);
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+
+.social-icons li a:hover::before {
+  transform: scale(0);
+}
+/*ÍCONES DE REDES SOCIAIS*/
