@@ -1,9 +1,5 @@
 (function($) {
 
-	/**
-	 * Desenvolvimento by Theo Arruda
-	* @return {jQuery} jQuery object.
-	 */
 	$.fn.navList = function() {
 
 		var	$this = $(this);
